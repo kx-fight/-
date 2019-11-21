@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rg_select"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_chat"
+            android:text="@string/wechat"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/style_RadioButton"/>
+        <RadioButton
+            android:id="@+id/rb_contacts"
+            android:text="@string/contacts"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/style_RadioButton"/>
+        <RadioButton
+            android:id="@+id/rb_discovery"
+            android:text="@string/discovery"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/style_RadioButton"/>
+        <RadioButton
+            android:id="@+id/rb_me"
+            android:text="@string/me"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/style_RadioButton"/>
+    </RadioGroup>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_select">
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

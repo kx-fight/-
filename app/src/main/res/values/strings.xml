@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WeChatViewPager</string>
+    <string name="wechat">微信</string>
+    <string name="contacts">通讯录</string>
+    <string name="discovery">发现</string>
+    <string name="me">我的</string>
+
+</resources>
